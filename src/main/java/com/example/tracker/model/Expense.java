@@ -35,7 +35,6 @@ public class Expense {
     private ExpenseCategory expensecategory;
 
     private int amount;
-
    
     private String description;
 
