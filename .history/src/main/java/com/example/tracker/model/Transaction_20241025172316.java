@@ -18,12 +18,11 @@ import lombok.Data;
 @Data
 public class Transaction {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  
-    @Column(name = "transaction_id")
-    private Long TransactionId;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long transactionId;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name="user_id")    
     private User user;
 
     @Enumerated
